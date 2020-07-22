@@ -24,21 +24,153 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:textSize="20sp"
+                        android:text="Convertisseur de température" />
+
+                    <TextView
+                        android:id="@+id/lResultat_Final"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:textSize="20sp"
+                        android:text="" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="18dp">
+
+                        <RadioButton
+                            android:id="@+id/rbC_F"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/c_f" />
+
+                        <RadioButton
+                            android:id="@+id/rbF_C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/f_c" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/tempEdit"
+                        android:inputType="numberDecimal"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dp" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="18dp">
 
+                        <Button
+                            android:id="@+id/bQuitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="25dp"
+                            android:text="Quitter"
+                            android:layout_marginRight="100dp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Button
+                            android:id="@+id/bConvertir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="25dp"
+                            android:text="Convertir"
+                            android:layout_gravity="center_horizontal" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="tab2" />
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:textSize="20sp"
+                        android:text="Convertisseur de distance" />
+
+                    <TextView
+                        android:id="@+id/lResultat_Final1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="18dp"
+                        android:textSize="20sp"
+                        android:text="" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="18dp">
+
+                        <RadioButton
+                            android:id="@+id/rbKm_Miles"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/km_miles" />
+
+                        <RadioButton
+                            android:id="@+id/rbMiles_Km"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/miles_km" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/distEdit"
+                        android:inputType="numberDecimal"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="18dp">
+
+                        <Button
+                            android:id="@+id/bQuitter1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="25dp"
+                            android:text="Quitter"
+                            android:layout_marginRight="100dp"
+                            android:layout_gravity="center_horizontal" />
+
+                        <Button
+                            android:id="@+id/bConvertir1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="25dp"
+                            android:text="Convertir"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
                 </LinearLayout>
             </FrameLayout>
         </LinearLayout>

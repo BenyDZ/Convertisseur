@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">convertisseur</string>
+    <string name="f_c"><![CDATA[F <-> C]]></string>
+    <string name="c_f"><![CDATA[C <-> F]]></string>
+    <string name="km_miles"><![CDATA[Km <-> Miles]]></string>
+    <string name="miles_km"><![CDATA[Miles <-> Km]]></string>
 </resources>
